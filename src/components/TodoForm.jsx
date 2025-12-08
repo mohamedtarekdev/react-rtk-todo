@@ -22,7 +22,7 @@ const TodoForm = () => {
                 </button>
                 <button
                     className="flex items-center justify-center w-10 h-10 bg-gray-600 hover:bg-gray-700 disabled:bg-gray-400 disabled:cursor-not-allowed text-white rounded-lg transition-colors duration-200 cursor-pointer"
-                    title="Save todo"
+                    title="Cancel todo"
                     type="submit"
                 >
                     <X size={18} />
