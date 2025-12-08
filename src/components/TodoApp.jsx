@@ -1,4 +1,4 @@
-import { Plus, Trash2 } from 'lucide-react';
+import { CheckCircle2, Plus, Trash2 } from 'lucide-react';
 import React from 'react';
 
 const TodoApp = () => {
@@ -69,7 +69,7 @@ const TodoApp = () => {
                                     Clear Completed
                                 </button>
                                 <button className="flex items-center gap-3 text-green-600 hover:text-green-700 px-3 py-2 rounded-xl hover:bg-green-50 transition-colors duration-200 text-sm cursor-pointer">
-                                    <Trash2 size={16} />
+                                    <CheckCircle2 size={16} />
                                     Mark All Completed
                                 </button>
                             </div>
