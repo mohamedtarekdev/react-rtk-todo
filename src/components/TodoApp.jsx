@@ -1,3 +1,4 @@
+import { Plus, Trash2 } from 'lucide-react';
 import React from 'react';
 
 const TodoApp = () => {
@@ -47,6 +48,30 @@ const TodoApp = () => {
                             </div>
                             <div className="text-sm text-gray-600">
                                 Completed
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Todo List Section */}
+                <div className="bg-white/90 backdrop-blur-sm rounded-b-2xl border border-gray-300 shadow-lg overflow-hidden">
+                    {/* Action Bar */}
+                    <div className="p-6 border-b border-gray-300">
+                        <div className="flex items-center justify-between mb-4">
+                            <button className="flex items-center gap-3 bg-gray-800 hover:bg-gray-700 text-white py-2 px-4 rounded-lg transition-colors duration-200 font-medium cursor-pointer">
+                                <Plus size={20} />
+                                Add Todo
+                            </button>
+                            {/* Clear and Delete Buttons */}
+                            <div className="flex items-center gap-2">
+                                <button className="flex items-center gap-3 text-red-600 hover:text-red-700 px-3 py-2 rounded-xl hover:bg-red-50 transition-colors duration-200 text-sm cursor-pointer">
+                                    <Trash2 size={16} />
+                                    Clear Completed
+                                </button>
+                                <button className="flex items-center gap-3 text-green-600 hover:text-green-700 px-3 py-2 rounded-xl hover:bg-green-50 transition-colors duration-200 text-sm cursor-pointer">
+                                    <Trash2 size={16} />
+                                    Mark All Completed
+                                </button>
                             </div>
                         </div>
                     </div>
