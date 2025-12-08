@@ -111,6 +111,10 @@ const TodoApp = () => {
                         </div>
                     </div>
                 </div>
+                {/* Footer */}
+                <div className="text-center mt-6 text-sm text-gray-700">
+                    Footer
+                </div>
             </div>
         </div>
     );
