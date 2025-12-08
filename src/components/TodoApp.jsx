@@ -1,5 +1,7 @@
-import { CheckCircle2, Plus, Trash2 } from 'lucide-react';
+import { CheckCircle2, Circle, Filter, Plus, Trash2 } from 'lucide-react';
 import React from 'react';
+import TodoFilter from './TodoFilter';
+import TodoForm from './TodoForm';
 
 const TodoApp = () => {
     return (
@@ -72,6 +74,39 @@ const TodoApp = () => {
                                     <CheckCircle2 size={16} />
                                     Mark All Completed
                                 </button>
+                            </div>
+                        </div>
+                        {/* Todo Filter */}
+                        <TodoFilter />
+                    </div>
+                    {/* Todo Form */}
+                    <div className="p-6 border-b border-gray-300 bg-gray-100">
+                        <TodoForm />
+                    </div>
+
+                    {/* Todo List */}
+                    <div className="max-h-96 overflow-y-auto">
+                        <div className="p-12 text-center">
+                            <div className="text-gray-600">
+                                <Circle
+                                    size={48}
+                                    className="mx-auto mb-4 opacity-50"
+                                />
+                                <p className="text-lg font-medium mb-2 text-gray-800">
+                                    No Todos Yet
+                                </p>
+                                <p>Add your first todo to get started</p>
+                            </div>
+
+                            {/* Conditional Rendering of TODO */}
+                            <div className="text-gray-600">
+                                <Filter
+                                    size={48}
+                                    className="mx-auto mb-4 opacity-50"
+                                />
+                                <p className="text-lg font-medium mb-2 text-gray-800">
+                                    No Filter Todos
+                                </p>
                             </div>
                         </div>
                     </div>
