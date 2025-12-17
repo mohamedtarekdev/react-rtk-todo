@@ -15,6 +15,8 @@ export const selectFilteredTodos = (state) => {
   }
 };
 
+export const selectIsAddingTodo = (state) => state.todos.isAddingTodo;
+
 export const selectTodosStates = (state) => {
   const todos = selectTodos(state);
   const total = todos.length;
